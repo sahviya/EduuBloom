@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 180 100% 4%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 180 100% 4%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 180 100% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 174 100% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 180 50% 10%;
+    --muted-foreground: 174 30% 70%;
+
+    --accent: 186 100% 30%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 180 50% 15%;
+    --input: 180 50% 10%;
+    --ring: 174 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* EduBloom Design System */
+    --teal-light: 174 100% 60%;
+    --teal-medium: 180 100% 25%;
+    --teal-dark: 186 100% 20%;
+    --cyan-blue: 200 100% 30%;
+    
+    --gradient-leaf: linear-gradient(135deg, hsl(var(--teal-light)), hsl(var(--teal-medium)));
+    --gradient-brain: linear-gradient(135deg, hsl(var(--teal-dark)), hsl(var(--cyan-blue)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--teal-light)), hsl(var(--cyan-blue)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--teal-medium) / 0.1), hsl(var(--cyan-blue) / 0.1));
+    
+    --shadow-glow: 0 0 40px hsl(var(--teal-light) / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(var(--teal-dark) / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode uses same colors as we're already on black background */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
