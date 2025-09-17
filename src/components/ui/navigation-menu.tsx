@@ -118,3 +118,8 @@ export {
   NavigationMenuIndicator,
   NavigationMenuViewport,
 };
+
+// Example usage: Add a Quizzes button to your navigation menu in your layout/header:
+// <NavigationMenuLink asChild>
+//   <Link to="/quizzes">Quizzes</Link>
+// </NavigationMenuLink>

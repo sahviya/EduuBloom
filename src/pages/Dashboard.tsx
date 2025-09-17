@@ -150,7 +150,7 @@ export default function Dashboard() {
               { icon: Users, label: "Community", color: "text-cyan-400", onClick: () => alert('Community feature coming soon!') },
               { icon: MessageSquare, label: "AI Bot", color: "text-teal-300" },
               { icon: Music, label: "Learn Through Music", color: "text-cyan-300", onClick: () => navigate('/texttomusic') },
-              { icon: HelpCircle, label: "Quizzes", color: "text-teal-500" }
+              { icon: HelpCircle, label: "Quizzes", color: "text-teal-500", onClick: () => navigate('/quizzes') }
             ].map((item, index) => (
               <button
                 key={index}

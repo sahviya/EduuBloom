@@ -12,6 +12,7 @@ import Courses from "./components/Courses";
 import ReadMorePage from "./pages/ReadMorePage";
 import TextToMusic from "./pages/TextToMusic";
 import DiscussCommunity from "./pages/DiscussCommunity";
+import QuizDashboard from "./pages/QuizDashboard";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/readmore" element={<ReadMorePage />} />
             <Route path="/texttomusic" element={<TextToMusic />} />
             <Route path="/discuss" element={<DiscussCommunity />} />
+            <Route path="/quizzes" element={<QuizDashboard />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
